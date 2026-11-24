@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome To the GWA App Calculator</h2>
+
+        <div class="input-section">
+            <label for="numSubjects">Enter the number of subjects:</label>
+            <input type="number" id="numSubjects" min="1">
+            <button onclick="createSubjectInputs()">Set Subjects</button>
+        </div>
+
+        <!-- Container for input fields -->
+        <div id="subjectInputs"></div>
+
+        <!-- Calculate button -->
+        <button id="calcBtn" class="calc-btn" onclick="calculateGradeReport()" style="display: none;">
+            Calculate Grade Report
+        </button>
+    </div>
+
+        <div class="container" id="reportSection" style="display: none;">
+            <h3>========== GRADE REPORT ==========</h3>
+            <div class="report-header">
+                <span>Subject</span>
+                <span>Units</span>
+                <span>Grade</span>
+                <span>Hours</span>
+                <span>Remarks</span>
+            </div>
+            <!-- Report lines inserted here by JavaScript -->
+            <div id="reportLines"></div>
+
+            <div class="summary-box">
+                <h4>======= Summary output ======</h4>
+                <p class="adjust" id="outUnits">Total units: </p>
+                <p class="adjust" id="outPoints">Total Points: </p>
+                <p class="adjust" id="outHours">Total Hours: </p>
+                <p class="adjust" id="outGwa">GWA: </p>
+                <p class="adjust" id="outStanding">Standing: </p>
+            </div>
+        </div>
+
+    <script src="grade.js"></script>
+</body>
+</html>
