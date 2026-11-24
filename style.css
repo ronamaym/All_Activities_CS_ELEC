@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20px;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto 24px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333333;
+}
+
+/* Input section flexbox layout */
+.input-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.input-section label {
+    white-space: nowrap;
+}
+
+.input-section input[type="number"] {
+    width: 100px;
+}
+
+.subject-block {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+.subject-block h4 {
+    margin: 0 0 8px 0;
+    color: #555555;
+}
+
+.field-group {
+    margin-bottom: 8px;
+}
+
+.field-group label {
+    display: inline-block;
+    width: 200px;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* General button styles */
+button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Reset button red styling */
+.reset-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #bd2130;
+}
+
+/* Calculate button full-width style */
+.calc-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.calc-btn:hover {
+    background-color: #218838;
+}
+
+/* Report grid layout */
+.report-header, .report-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+}
+
+.report-header {
+    background-color: #eee;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.summary-box {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+}
+
+.adjust {
+    padding-left: 10px;
+}
